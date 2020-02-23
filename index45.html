@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>	
+    <body>	
+         <script> 
+             
+			 
+		     function checkAge(age){
+			     var age = prompt('Ваш возраст? ');
+				 if (isNaN(age)) alert('Некорректные данные!');
+			     else if (age == '')  alert('Данные не введены!');
+				 else if (age == 0)  alert('Данные не введены!');
+				 else if (age == null)  alert('Данные не введены!');
+				 else if (age > 18) {
+				     return true;
+				     } else {
+			     return confirm ('Родители разрешили?');
+				     } 
+	             }			 		
+
+			     if (checkAge()) {
+			         alert ('Доступ разрешен');
+					 } else { 
+					     alert('В доступе отказано');
+					 }
+
+		 </script>  
+    </body>
+</html>
