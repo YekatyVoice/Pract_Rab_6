@@ -3,20 +3,19 @@
     <head></head>	
     <body>	
          <script> 
-		     function calcD(a, b, c){
-			     if (Number.isNaN(parseInt(a)) == false && Number.isNaN(parseInt(b)) == false && Number.isNaN(parseInt(c)) == false) 
-				     return b * b - 4 * a * c;
-                 else 
-				     return 'Введите числовые значения a, b, c';
-				 } 
-			 var a = prompt('Введите значение а: ');
-			 var b = prompt('Введите значение b: ');
-			 var c = prompt('Введите значение c: ');
-             var discriminant = calcD(a, b, c);		
-			     if (isFinite(discriminant))
-			         alert ('Дискриминант D = ' + discriminant);
-				 else alert('Неверные значения!');
-			 
-		 </script>  
+	     function calcD(a, b, c){
+	        if (Number.isNaN(parseInt(a)) == false && Number.isNaN(parseInt(b)) == false && Number.isNaN(parseInt(c)) == false) 
+	           return b * b - 4 * a * c;
+                else 
+	           return 'Введите числовые значения a, b, c';
+		 } 
+	    var a = prompt('Введите значение а: ');
+	    var b = prompt('Введите значение b: ');
+	    var c = prompt('Введите значение c: ');
+            var discriminant = calcD(a, b, c);		
+		 if (isFinite(discriminant))
+		    alert ('Дискриминант D = ' + discriminant);
+		 else alert('Неверные значения!');	 
+	</script>  
     </body>
 </html>
